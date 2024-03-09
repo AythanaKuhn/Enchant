@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <title>ENCHANT</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="header">
+            <h1 id="logo">ENCHANT</h1>
+            <h2>O requinte ao seus pés, passo a passo</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="promo">
+            <img id="imagem1" src="./images/maryjanemarrom.png">
+
+            <div id="ofertaPromo">
+                <h2 id="descricao1">Mary Jane's Vintage Marrom Salto 7cm Quadrado tam. 37</h2>
+                <div id="precoPromo">
+                    <h3>De <s>R$829.90</s></h3>
+                    <h3>Por</h3>
+                    <h2 id="preco1">R$590.93</h1>
+                </div>
+            </div>
+
+            <div id="botao">
+                <button type="button" value="COMPRAR AGORA" id="botaopromo" onclick="comprarProduto(produto=1)">COMPRAR
+                    <br> AGORA</button>
+            </div>
+        </div>
+
+
+        <div class="produtos">
+
+
+            <div class="produto">
+                <table>
+                    <tr class="imagemProduto">
+                        <img id='imagem2' src="./images/mocassimpreto.png">
+                    </tr>
+                    <tr class="descricaoProduto">
+                        <h3 id="descricao2">Mocassim Couro Preto Detalhe Dourado tam. 36</h3>
+                    </tr>
+                    <tr class="precoProduto">
+                        <h2 id="preco2">R$582.99</h2>
+                    </tr>
+                    <tr class="botaoComprar">
+                        <button type="button" class="comprar" onclick="comprarProduto(produto=2)">COMPRAR</button>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="produto">
+                <table>
+                    <tr class="imagemProduto">
+                        <img id="imagem3" src="./images/sapato_promo.png">
+                    </tr>
+                    <tr class="descricaoProduto">
+                        <h3 id="descricao3">Sapato Mary Jane Vintage Marrom Fivela Dupla Salto 7cm tam. 38</h3>
+                    </tr>
+                    <tr class="precoProduto">
+                        <h2 id="preco3">R$656.99</h2>
+                    </tr>
+                    <tr class="botaoComprar">
+                        <button type="button" class="comprar" onclick="comprarProduto(produto=3)">COMPRAR</button>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="produto">
+                <table>
+                    <tr class="imagemProduto">
+                        <img id="imagem4" src="./images/botacouro.webp">
+                    </tr>
+                    <tr class="descricaoProduto">
+                        <h3 id="descricao4">Bota Couro Marrom Salto 7cm tam. 38</h3>
+                    </tr>
+                    <tr class="precoProduto">
+                        <h2 id="preco4">R$859.99</h2>
+                    </tr>
+                    <tr class="botaoComprar">
+                        <button type="button" class="comprar" onclick="comprarProduto(produto=4)">COMPRAR</button>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="produto">
+                <table>
+                    <tr class="imagemProduto">
+                        <img id="imagem5" src="./images/botascourovermelho.jpg">
+                    </tr>
+                    <tr class="descricaoProduto">
+                        <h3 id="descricao5">Bota Couro Vermelho Salto 8cm tam. 37</h3>
+                    </tr>
+                    <tr class="precoProduto">
+                        <h2 id="preco5">R$980.90</h2>
+                    </tr>
+                    <tr class="botaoComprar">
+                        <button type="button" class="comprar" onclick="comprarProduto(produto=5)">COMPRAR</button>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="produto">
+                <table>
+                    <tr class="imagemProduto">
+                        <img id="imagem6" src="./images/scarpinfino.webp">
+                    </tr>
+                    <tr class="descricaoProduto">
+                        <h3 id="descricao6">Scarpin Salto 9,5cm Bico Fino Quadriculado tam.36</h3>
+                    </tr>
+                    <tr class="precoProduto">
+                        <h2 id="preco6">R$745.98</h2>
+                    </tr>
+                    <tr class="botaoComprar">
+                        <button type="button" class="comprar" onclick="comprarProduto(produto=6)">COMPRAR</button>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="produto">
+                <table>
+                    <tr class="imagemProduto">
+                        <img id="imagem7" src="./images/sandalia.webp">
+                    </tr>
+                    <tr class="descricaoProduto">
+                        <h3 id="descricao7">Sandália Couro Preto Salto 4cm tam. 37</h3>
+                    </tr>
+                    <tr class="precoProduto">
+                        <h2 id="preco7">R$499.98</h2>
+                    </tr>
+                    <tr class="botaoComprar">
+                        <button type="button" class="comprar" onclick="comprarProduto(produto=7)">COMPRAR</button>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <h1>Sobre a ENCHANT</h1>
+            <p>Na ENCHANT, buscamos criar um universo dedicado à elegância e sofisticação no mundo dos calçados. Fundada com a
+                paixão por proporcionar um toque encantador a cada passo, nossa loja busca redefinir o conceito de
+                estilo e conforto, entregando o produto perfeito pra você.</p>
+            <p>Contato:</p>
+            <p>enchantoficial@gmail.com</p>
+            <p>(77) 3768-7466</p>
+        </footer>
+    </div>
+
+    <section id="sectionPagamento">
+        <div class="pagamento">
+            <div id="compra">
+                <div id="close">
+                    <button type="button" onclick="closeCompra()" id="botaoclose">X</button>
+                </div>
+
+                Informações do produto
+                <div class="info">
+                    <div>
+                        <img src="" id="imagemDescritiva">
+                    </div>
+                    <div id="descricao">
+                        <p id="textoDescritivo"></p>
+                    </div>
+                    <div>
+                        <p id="precoDescritivo"></p>
+                    </div>
+                </div>
+
+
+                <div id="formaDePagamento">
+                    <div>Forma de Pagamento:</div>
+                    <br>
+                    <div id="opcoes">
+                        <button type="button" value="pix" onclick="compraPIX()">PIX</button>
+                        <button type="button" value="credito" onclick="compraCredito()">CARTÃO DE CRÉDITO</button>
+                    </div>
+                </div>
+                <br>
+
+                <div id="pix">
+                    <form onsubmit="finalizarCompra(event)">
+                        <label for="cpf">Informe o seu CPF:* </label>
+                        <input type="text" id="cpf" required>
+                        <br>
+                        <input type="submit" class="finalizar_compra" value="FINALIZAR COMPRA">
+                    </form>
+                </div>
+
+                <div id="credito">
+                    <form onsubmit="finalizarCompra(event)">
+                        <label for="nome">Nome do Titular*</label>
+                        <input type="text" id="nome" size="30" pattern="^[A-Za-z]+$" required>
+                        <br>
+                        <label for="numero">Número do cartão* </label>
+                        <input type="text" id="numero" size="20" required>
+                        <br>
+                        <label for="validade">Validade do cartão*</label>
+                        <input type="text" id="validade" size="3" placeholder="MM/AA" required>
+                        <br>
+                        <label for="codigo">Código de segurança* </label>
+                        <input type="password" id="codigo" size="3" placeholder="XXX" required>
+                        <br>
+                        <label for="parcelas">Quantidade de Parcelas*</label>
+                        <select name="parcelas" id="parcelas" required>
+                            <option value="1x" id="1x"></option>
+                            <option value="2x" id="2x"></option>
+                            <option value="3x" id="3x"></option>
+                            <option value="6x" id="6x"></option>
+                            <option value="12x" id="12x"></option>
+                        </select>
+                        <br>
+                        <input type="submit" class="finalizar_compra" value="FINALIZAR COMPRA">
+                    </form>
+                </div>
+            </div>
+            <div id="compraFinalizada">
+                <h1>Compra finalizada com sucesso.</h1>
+                <h1>Obrigada pela preferência!</h1>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>

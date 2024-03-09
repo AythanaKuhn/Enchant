@@ -1,0 +1,287 @@
+
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cabeçalho */
+
+header {
+    height: 100px;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+
+    background-color: #8a0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+#logo {
+    font-size: 60px;
+}
+
+/* Promoção */
+
+#promo {
+    background-color: black;
+    color: white;
+    height: 300px;
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-right: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#promo,
+img {
+    height: 300px;
+}
+
+#ofertaPromo {
+    font-size: 15px;
+    width: 400px;
+    color: white;
+    text-align: center;
+}
+
+#precoPromo {
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#precoPromo h2 {
+    color: #8a0d0d;
+}
+
+#botaopromo {
+    height: 80px;
+    width: 160px;
+    font-size: 20px;
+    border: 0;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #8a0d0d;
+    color: white;
+}
+
+#botaopromo:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+
+/* Produtos */
+
+.produtos img {
+    height: 250px;
+    width: 250px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    color: black;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.produto {
+    font-size: 15px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.comprar {
+    width: 150px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.comprar:hover {
+    opacity: 80%;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+
+/* Comprar */
+
+#sectionPagamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagamento {
+    color: black;
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.3);
+    
+    width: 50%;
+    padding: 20px;
+    font-size: 18px;
+    margin: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#close{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#close button{
+    background-color: black;
+    color: white;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#close button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.info {
+    width: 90%;
+    margin-right: 20px;
+    height: 150px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info img {
+    height: 150px;
+    width: 150px;
+}
+
+
+
+
+.radio input {
+    cursor: pointer;
+    height: 20px;
+    width: 50px;
+}
+
+
+
+#opcoes{
+    gap: 40px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#opcoes button{
+    background-color: black;
+    color: white;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+#opcoes button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+
+#pix input{
+    margin: 25px;
+}
+
+#credito input, select{
+    margin: 20px;
+}
+
+.finalizar_compra {
+    background-color: #8a0d0d;
+    border: 0;
+    color: white;
+    width: 200px;
+    height: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+
+}
+
+.finalizar_compra:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+
+
+/* Rodapé */
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    bottom: 50;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+}
